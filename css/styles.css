@@ -1,0 +1,78 @@
+/* tipografia */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@400;700&display=swap");
+
+/* cores */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+/* alteraçoes */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.container-bg {
+  background-color: var(--light-gray);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+.card {
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 15px;
+}
+.description,
+.description p,
+.attribution {
+  padding: 10px;
+}
+
+.description h2 {
+  color: var(--dark-blue);
+}
+
+.description p {
+  color: var(--grayish-blue);
+  font-weight: 500;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 370px) {
+  .attribution {
+    display: none;
+  }
+}
